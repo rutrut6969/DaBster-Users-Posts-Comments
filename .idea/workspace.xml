@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b49449f2-0cad-477a-9ed1-c26acb64adda" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_oauth_spring_security_oauth2_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_3_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_3_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_3_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_3_3_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dabusers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/DabusersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/DabusersApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/users/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/models/Auditable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/repo/UsersRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/users/repo/UsersRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/serviceimpl/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/users/serviceimpl/Services.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/services/UserAuditing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/users/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/config/Swagger2Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/config/swagconfig/Swagger2Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/config/SwaggerWebMVC.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/config/swagconfig/SwaggerWebMVC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +82,7 @@
       <workItem from="1592486904967" duration="10491000" />
       <workItem from="1592518073072" duration="3449000" />
       <workItem from="1592537798938" duration="14000" />
-      <workItem from="1592542800715" duration="1395000" />
+      <workItem from="1592542800715" duration="7086000" />
     </task>
     <servers />
   </component>
@@ -106,10 +90,11 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="491" y="83" width="495" height="625" key="#com.intellij.ide.util.MemberChooser" timestamp="1592494867841">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="203" y="97" width="920" height="551" key="#com.intellij.ide.util.MemberChooser" timestamp="1592549879098">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="491" y="83" width="495" height="625" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1592494867841" />
+    <state x="203" y="97" width="920" height="551" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592549879098" />
     <state x="244" y="320" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592542979017">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -127,50 +112,50 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="465" y="139" key="FileChooserDialogImpl/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592428469371" />
-    <state width="1320" height="188" key="GridCell.Tab.0.bottom" timestamp="1592543979148">
+    <state width="1320" height="188" key="GridCell.Tab.0.bottom" timestamp="1592549395946">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="1320" height="189" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1592516179827" />
-    <state width="1320" height="188" key="GridCell.Tab.0.bottom/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592543979148" />
-    <state width="1320" height="188" key="GridCell.Tab.0.center" timestamp="1592543979144">
+    <state width="1320" height="188" key="GridCell.Tab.0.bottom/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592549395946" />
+    <state width="1320" height="188" key="GridCell.Tab.0.center" timestamp="1592549395945">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="1320" height="189" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1592516179826" />
-    <state width="1320" height="188" key="GridCell.Tab.0.center/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592543979144" />
-    <state width="1320" height="188" key="GridCell.Tab.0.left" timestamp="1592543979134">
+    <state width="1320" height="188" key="GridCell.Tab.0.center/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592549395945" />
+    <state width="1320" height="188" key="GridCell.Tab.0.left" timestamp="1592549395945">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="1320" height="189" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1592516179824" />
-    <state width="1320" height="188" key="GridCell.Tab.0.left/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592543979134" />
-    <state width="1320" height="188" key="GridCell.Tab.0.right" timestamp="1592543979147">
+    <state width="1320" height="188" key="GridCell.Tab.0.left/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592549395945" />
+    <state width="1320" height="188" key="GridCell.Tab.0.right" timestamp="1592549395946">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="1320" height="189" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1592516179826" />
-    <state width="1320" height="188" key="GridCell.Tab.0.right/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592543979147" />
-    <state width="1320" height="188" key="GridCell.Tab.1.bottom" timestamp="1592543979151">
+    <state width="1320" height="188" key="GridCell.Tab.0.right/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592549395946" />
+    <state width="1320" height="188" key="GridCell.Tab.1.bottom" timestamp="1592549395946">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="1320" height="189" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1592516179832" />
-    <state width="1320" height="188" key="GridCell.Tab.1.bottom/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592543979151" />
-    <state width="1320" height="188" key="GridCell.Tab.1.center" timestamp="1592543979148">
+    <state width="1320" height="188" key="GridCell.Tab.1.bottom/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592549395946" />
+    <state width="1320" height="188" key="GridCell.Tab.1.center" timestamp="1592549395946">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="1320" height="189" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1592516179830" />
-    <state width="1320" height="188" key="GridCell.Tab.1.center/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592543979148" />
-    <state width="1320" height="188" key="GridCell.Tab.1.left" timestamp="1592543979148">
+    <state width="1320" height="188" key="GridCell.Tab.1.center/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592549395946" />
+    <state width="1320" height="188" key="GridCell.Tab.1.left" timestamp="1592549395946">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="1320" height="189" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1592516179829" />
-    <state width="1320" height="188" key="GridCell.Tab.1.left/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592543979148" />
-    <state width="1320" height="188" key="GridCell.Tab.1.right" timestamp="1592543979150">
+    <state width="1320" height="188" key="GridCell.Tab.1.left/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592549395946" />
+    <state width="1320" height="188" key="GridCell.Tab.1.right" timestamp="1592549395946">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="1320" height="189" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1592516179831" />
-    <state width="1320" height="188" key="GridCell.Tab.1.right/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592543979150" />
-    <state x="262" y="85" key="Maven.ArtifactSearchDialog" timestamp="1592544276208">
+    <state width="1320" height="188" key="GridCell.Tab.1.right/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592549395946" />
+    <state x="262" y="85" key="Maven.ArtifactSearchDialog" timestamp="1592548616252">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="262" y="85" key="Maven.ArtifactSearchDialog/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592544276208" />
+    <state x="262" y="85" key="Maven.ArtifactSearchDialog/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592548616252" />
     <state x="387" y="136" width="592" height="522" key="find.popup" timestamp="1592543659916">
       <screen x="0" y="30" width="1366" height="738" />
     </state>

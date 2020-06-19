@@ -1,4 +1,4 @@
-package com.dabster.dabusers.config;
+package com.dabster.dabusers.config.swagconfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
