@@ -1,8 +1,8 @@
-package com.dabster.dabusers.serviceimpl;
+package com.dabster.dabusers.users.serviceimpl;
 
-import com.dabster.dabusers.models.User;
-import com.dabster.dabusers.repo.UsersRepo;
-import com.dabster.dabusers.services.UserService;
+import com.dabster.dabusers.users.User;
+import com.dabster.dabusers.users.repo.UsersRepo;
+import com.dabster.dabusers.users.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

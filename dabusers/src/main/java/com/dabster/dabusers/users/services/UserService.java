@@ -1,6 +1,6 @@
-package com.dabster.dabusers.services;
+package com.dabster.dabusers.users.services;
 
-import com.dabster.dabusers.models.User;
+import com.dabster.dabusers.users.User;
 
 import java.util.List;
 

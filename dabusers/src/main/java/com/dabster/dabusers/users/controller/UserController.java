@@ -1,8 +1,8 @@
-package com.dabster.dabusers.controller;
+package com.dabster.dabusers.users.controller;
 
 
-import com.dabster.dabusers.models.User;
-import com.dabster.dabusers.services.UserService;
+import com.dabster.dabusers.users.User;
+import com.dabster.dabusers.users.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
