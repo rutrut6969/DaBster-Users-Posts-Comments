@@ -1,12 +1,12 @@
-package com.dabster.dabusers.serviceimpl;
+package com.dabster.dabusers.users.serviceimpl;
 
-import com.dabster.dabusers.models.User;
-import com.dabster.dabusers.repo.UsersRepo;
-import com.dabster.dabusers.services.UserService;
+import com.dabster.dabusers.exceptions.customexceptions.ResourceNotFoundException;
+import com.dabster.dabusers.users.User;
+import com.dabster.dabusers.users.repo.UsersRepo;
+import com.dabster.dabusers.users.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +34,6 @@ public class Services implements UserService {
         // Add Implementation of Posts and comments here when they are created
 
 
-
         userrepo.save(newUser);
         return newUser;
     }
@@ -53,15 +52,15 @@ public class Services implements UserService {
     }
 
     @Override
-    public  User findUserById(long id) throws EntityNotFoundException {
-        return userrepo.findById(id).orElseThrow(() -> new EntityNotFoundException("User with the ID of " + id + " Was not found"));
+    public User findUserById(long id) throws ResourceNotFoundException {
+        return userrepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("User with the ID of " + id + " Was not found"));
     }
 
     @Override
     public User findUserByName(String name) {
         User u = userrepo.findByUsername(name.toLowerCase());
-        if (u == null){
-            throw new EntityNotFoundException("User " + name + " Does not Exist!");
+        if (u == null) {
+            throw new ResourceNotFoundException("User " + name + " Does not Exist!");
         }
         return u;
     }
@@ -71,16 +70,16 @@ public class Services implements UserService {
     @Override
     public User updateUserInfo(User user, long id) {
         User userToUpdate = findUserById(id);
-        if(user.getName() != null){
+        if (user.getName() != null) {
             userToUpdate.setName(user.getName());
         }
-        if(user.getBio() != null){
+        if (user.getBio() != null) {
             userToUpdate.setBio(user.getBio());
         }
-        if(user.getEmail() != null){
+        if (user.getEmail() != null) {
             userToUpdate.setEmail(user.getEmail());
         }
-        if(user.getPassword() != null){
+        if (user.getPassword() != null) {
             userToUpdate.setPassword(user.getPassword());
         }
 

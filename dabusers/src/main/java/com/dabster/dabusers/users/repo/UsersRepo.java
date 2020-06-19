@@ -1,6 +1,6 @@
-package com.dabster.dabusers.repo;
+package com.dabster.dabusers.users.repo;
 
-import com.dabster.dabusers.models.User;
+import com.dabster.dabusers.users.User;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

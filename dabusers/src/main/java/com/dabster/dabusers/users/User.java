@@ -1,18 +1,23 @@
-package com.dabster.dabusers.models;
+package com.dabster.dabusers.users;
 
 import javax.persistence.*;
 
 @Entity // Assigns it as a table
 @Table(name = "users") // Gives the table a name
-public class User extends Auditable {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long userid;
+
+    @Column(nullable = false, unique = true)
     private String username;
+    @Column(nullable = false, unique = true)
     private String name;
+    @Column(nullable = false, unique = true)
     private String email;
     private String bio;
+    @Column(nullable = false, unique = true)
     private String password;
 
     public User() {
