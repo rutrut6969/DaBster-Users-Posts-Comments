@@ -9,10 +9,15 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long userid;
+
+    @Column(nullable = false, unique = true)
     private String username;
+    @Column(nullable = false, unique = true)
     private String name;
+    @Column(nullable = false, unique = true)
     private String email;
     private String bio;
+    @Column(nullable = false, unique = true)
     private String password;
 
     public User() {
