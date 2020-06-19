@@ -23,65 +23,65 @@ public class UserController {
     private UserService userService;
 
     // Here will be your endpoints for the Users Table CRUD Functionality endpoints!
-        // C Create --
-           // Utilize your creation methods for this endpoint(s)
-            @PostMapping(value = "/signup", consumes = {"application/json"})
-            public ResponseEntity<?> createUser (@Validated @RequestBody User user) throws URISyntaxException {
-                user.setUserid(0);
-                user = userService.save(user);
+    // C Create --
+    // Utilize your creation methods for this endpoint(s)
+    @PostMapping(value = "/signup", consumes = {"application/json"})
+    public ResponseEntity<?> createUser(@Validated @RequestBody User user) throws URISyntaxException {
+        user.setUserid(0);
+        user = userService.save(user);
 
-                // Settiing up the headers and URI
-                HttpHeaders responseHeaders = new HttpHeaders();
-                URI newUserURI = ServletUriComponentsBuilder.fromCurrentRequest()
-                        .path("/api/users/{userid}")
-                        .buildAndExpand(user.getUserid())
-                        .toUri();
-                responseHeaders.setLocation(newUserURI);
-                return new ResponseEntity<>(null, responseHeaders, HttpStatus.CREATED);
-            }
+        // Settiing up the headers and URI
+        HttpHeaders responseHeaders = new HttpHeaders();
+        URI newUserURI = ServletUriComponentsBuilder.fromCurrentRequest()
+                .path("/api/users/{userid}")
+                .buildAndExpand(user.getUserid())
+                .toUri();
+        responseHeaders.setLocation(newUserURI);
+        return new ResponseEntity<>(null, responseHeaders, HttpStatus.CREATED);
+    }
 
-        // R Read --
-            // Utilize your readability functions here.
+    // R Read --
+    // Utilize your readability functions here.
 
-            // Find all users
-            @GetMapping(value = "/", produces = {"application/json"})
-            public ResponseEntity<?> findAllUsers(){
-                List<User> allUsers = userService.findAllUsers();
-                return new ResponseEntity<>(allUsers, HttpStatus.OK);
-            }
+    // Find all users
+    @GetMapping(value = "/", produces = {"application/json"})
+    public ResponseEntity<?> findAllUsers() {
+        List<User> allUsers = userService.findAllUsers();
+        return new ResponseEntity<>(allUsers, HttpStatus.OK);
+    }
 
-            // Find User By Id
-            @GetMapping(value = "/user/{userid}", produces = {"application/json"})
-            public ResponseEntity<?> findUserByID(@PathVariable long userid) throws Throwable{
-                User foundUser = userService.findUserById(userid);
-                return new ResponseEntity<>(foundUser, HttpStatus.OK);
-            }
+    // Find User By Id
+    @GetMapping(value = "/user/{userid}", produces = {"application/json"})
+    public ResponseEntity<?> findUserByID(@PathVariable long userid) throws Throwable {
+        User foundUser = userService.findUserById(userid);
+        return new ResponseEntity<>(foundUser, HttpStatus.OK);
+    }
 
-            @GetMapping(value = "/username/{username}", produces = {"application/json"})
-            public ResponseEntity<?> findUserByName(@PathVariable String username){
-                User user = userService.findUserByName(username);
-                return new ResponseEntity<>(user, HttpStatus.OK);
-            }
+    @GetMapping(value = "/username/{username}", produces = {"application/json"})
+    public ResponseEntity<?> findUserByName(@PathVariable String username) {
+        User user = userService.findUserByName(username);
+        return new ResponseEntity<>(user, HttpStatus.OK);
+    }
 
-            @GetMapping(value = "/likename/{likename}", produces = {"application/json"})
-            public ResponseEntity<?> findUsersByLikename(@PathVariable String likename){
-                List<User> foundUsers = userService.findAllByNameContaining(likename);
-                return new ResponseEntity<>(foundUsers, HttpStatus.OK);
-            }
+    @GetMapping(value = "/likename/{likename}", produces = {"application/json"})
+    public ResponseEntity<?> findUsersByLikename(@PathVariable String likename) {
+        List<User> foundUsers = userService.findAllByNameContaining(likename);
+        return new ResponseEntity<>(foundUsers, HttpStatus.OK);
+    }
 
-            // U Update --
-                @PutMapping(value = "/user/{userid}", consumes = {"application/json"})
-                public ResponseEntity<?> updateUser(@PathVariable long userid, User userInfo) {
-                    userService.updateUserInfo(userInfo, userid);
-                    return new ResponseEntity<>(null, HttpStatus.OK);
-                }
+    // U Update --
+    @PutMapping(value = "/user/{userid}", consumes = {"application/json"})
+    public ResponseEntity<?> updateUser(@PathVariable long userid, User userInfo) {
+        userService.updateUserInfo(userInfo, userid);
+        return new ResponseEntity<>(null, HttpStatus.OK);
+    }
 
-            // D Delete --
-                @DeleteMapping(value = "/user/{userid}")
-                public ResponseEntity<?> deleteUser(@PathVariable long userid){
-                    userService.deleteUser(userid);
-                    return new ResponseEntity<>(null, HttpStatus.OK);
-                }
+    // D Delete --
+    @DeleteMapping(value = "/user/{userid}")
+    public ResponseEntity<?> deleteUser(@PathVariable long userid) {
+        userService.deleteUser(userid);
+        return new ResponseEntity<>(null, HttpStatus.OK);
+    }
 
 
 }

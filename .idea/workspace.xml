@@ -3,9 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="b49449f2-0cad-477a-9ed1-c26acb64adda" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dabusers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/config/Swagger2Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/config/swagconfig/Swagger2Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/config/SwaggerWebMVC.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/config/swagconfig/SwaggerWebMVC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/DabusersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/DabusersApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/config/H2ServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/config/H2ServerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/config/swagconfig/Swagger2Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/config/swagconfig/Swagger2Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/config/swagconfig/SwaggerWebMVC.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/config/swagconfig/SwaggerWebMVC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/exceptions/CustomErrorDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/exceptions/CustomErrorDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/exceptions/errordetailsmodels/ErrorDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/exceptions/errordetailsmodels/ErrorDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/exceptions/handlers/HelperFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/exceptions/handlers/HelperFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/exceptions/handlers/RestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/exceptions/handlers/RestExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/users/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/users/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/users/serviceimpl/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/users/serviceimpl/Services.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/users/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dabusers/src/main/java/com/dabster/dabusers/users/services/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +91,7 @@
       <workItem from="1592486904967" duration="10491000" />
       <workItem from="1592518073072" duration="3449000" />
       <workItem from="1592537798938" duration="14000" />
-      <workItem from="1592542800715" duration="7086000" />
+      <workItem from="1592542800715" duration="9040000" />
     </task>
     <servers />
   </component>
@@ -90,11 +99,11 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="203" y="97" width="920" height="551" key="#com.intellij.ide.util.MemberChooser" timestamp="1592549879098">
+    <state x="203" y="97" width="920" height="551" key="#com.intellij.ide.util.MemberChooser" timestamp="1592550907002">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="491" y="83" width="495" height="625" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1592494867841" />
-    <state x="203" y="97" width="920" height="551" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592549879098" />
+    <state x="203" y="97" width="920" height="551" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592550907002" />
     <state x="244" y="320" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592542979017">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -156,10 +165,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="262" y="85" key="Maven.ArtifactSearchDialog/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592548616252" />
-    <state x="387" y="136" width="592" height="522" key="find.popup" timestamp="1592543659916">
+    <state x="478" y="95" width="609" height="580" key="find.popup" timestamp="1592551996057">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="387" y="136" width="592" height="522" key="find.popup/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592543659916" />
+    <state x="478" y="95" width="609" height="580" key="find.popup/0.30.1366.738/1366.0.1360.768@0.30.1366.738" timestamp="1592551996057" />
     <state x="58" y="100" width="1241" height="591" key="new project wizard" timestamp="1592428489075">
       <screen x="0" y="30" width="1366" height="738" />
     </state>

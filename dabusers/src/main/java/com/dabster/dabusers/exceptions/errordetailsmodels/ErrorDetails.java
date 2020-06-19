@@ -15,7 +15,8 @@ public class ErrorDetails {
     private List<ValidationError> errors = new ArrayList<>();
 
     // Default Constructor
-    public ErrorDetails() {}
+    public ErrorDetails() {
+    }
 
 
     public String getTitle() {

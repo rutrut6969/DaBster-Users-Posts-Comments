@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity // Assigns it as a table
 @Table(name = "users") // Gives the table a name
-public class User{
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
